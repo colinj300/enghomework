@@ -30,7 +30,7 @@ rocket_m0 = 11000 # kg
 rocket_mf = 8300 # kg
 rocket_ve = 2030 # m/s
 
-print("The Reynolds number is", (reynolds_mu * reynolds_L) / reynolds_visc) # Reynolds number print statement
-print("The Wavelength is", 2 * wavelength_dist * sin(((pi/180) * wavelength_angle)), "nm") # Wavelength print statement
-print("The Production rate is", arps_qi / (1 + (arps_hypconst * arps_di * arps_days))**(1/arps_hypconst), "barrels/day") 
-print("The Change of velocity is", rocket_ve * log(rocket_m0 / rocket_mf), "m/s")
+print("Reynolds number is", (reynolds_mu * reynolds_L) / reynolds_visc) # Reynolds number print statement
+print("Wavelength is", 2 * wavelength_dist * sin(((pi/180) * wavelength_angle)), "nm") # Wavelength print statement
+print("Production rate is", arps_qi / (1 + (arps_hypconst * arps_di * arps_days))**(1/arps_hypconst), "barrels/day") 
+print("Change of velocity is", rocket_ve * log(rocket_m0 / rocket_mf), "m/s")
