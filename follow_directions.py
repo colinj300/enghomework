@@ -1,0 +1,25 @@
+# By submitting this assignment, I agree to the following:
+#   "Aggies do not lie, cheat, or steal, or tolerate those who do."
+#   "I have not given or received any unauthorized aid on this assignment."
+#
+# Name:         COLIN JOHNS
+# Section:      ENG-102-535
+# Assignment:   LAB 1.3 (Follow Directions)
+# Date:         8/26/26
+#
+
+from math import * # math import
+
+print("This shows the evaluation of (1-cosx) / x^2 evaluated cloose to x=0")
+
+x = 1.0
+funct = ((1-cos(x)) / x**2)
+print(funct)
+x = x / 10
+funct = ((1-cos((pi/180) * x)) / x**2)
+print(funct)
+
+
+
+
+
