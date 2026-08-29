@@ -11,14 +11,42 @@
 from math import * # math import
 
 print("This shows the evaluation of (1-cosx) / x^2 evaluated cloose to x=0")
+print("My guess is 1")
 
 x = 1.0
 funct = ((1-cos(x)) / x**2)
 print(funct)
+
 x = x / 10
-funct = ((1-cos((pi/180) * x)) / x**2)
+funct = ((1-cos(x)) / x**2)
 print(funct)
 
+x = x / 10
+funct = ((1-cos(x)) / x**2)
+print(funct)
+
+x = x / 10
+funct = ((1-cos(x)) / x**2)
+print(funct)
+
+x = x / 10
+funct = ((1-cos(x)) / x**2)
+print(funct)
+
+x = x / 10
+funct = ((1-cos(x)) / x**2)
+print(funct)
+
+x = x / 10
+funct = ((1-cos(x)) / x**2)
+print(funct)
+
+x = x / 10
+funct = ((1-cos(x)) / x**2)
+print(funct)
+
+print("")
+print("My guess was a little off")
 
 
 
