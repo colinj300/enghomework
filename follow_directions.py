@@ -10,7 +10,7 @@
 
 from math import * # math import
 
-print("This shows the evaluation of (1-cos(x))/x^2 evaluated cloose to x=0")
+print("This shows the evaluation of (1-cos(x))/x^2 evaluated close to x=0")
 print("My guess is 1")
 
 x = 1.0
