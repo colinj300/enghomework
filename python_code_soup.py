@@ -35,7 +35,9 @@ y *= x # y now equals 10000
 x = y # x now equals 10000
 y *= x # y now equals 1e8
 x = y # x now equals 1e8
-y *= x # y now equals 1e16
+y *= x
+x = y # y now equals 1e16
+y *= x
 z += y # z now equals 1e16
 print(z) # prints 1e16
 
