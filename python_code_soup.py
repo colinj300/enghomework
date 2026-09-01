@@ -4,7 +4,7 @@
 #
 # Name:         COLIN JOHNS
 # Section:      ENG-102-535
-# Assignment:   LAB 2.3 Individual (Python Code Soup)
+# Assignment:   LAB 2.2 Individual (Python Code Soup)
 # Date:         9/1/26
 #
 

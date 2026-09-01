@@ -4,7 +4,7 @@
 #
 # Name:         COLIN JOHNS
 # Section:      ENG-102-535
-# Assignment:   LAB 2.3 (Linear Interpolation)
+# Assignment:   LAB 2.3 Individual (More Linear Interpolation)
 # Date:         9/1/26
 #
 
@@ -82,10 +82,3 @@ print("-----------------------")
 
 
 
-
-# y0 = (((y2-y1)/(x2-x1))*(x0-x1) + y1)
-# y0 = (((y2-y1)/(x2-x1))*(x0-x1) + y1) # rerunning interpolation with updated x0
-
-
-
-# 300 minutes, just use the slope of the line to calculate the y pos (distance) in a larger number 

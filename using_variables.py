@@ -4,7 +4,7 @@
 #
 # Name:         COLIN JOHNS
 # Section:      ENG-102-535
-# Assignment:   LAB 2.1 (Using Variables)
+# Assignment:   LAB 2.1 Individual (Using Variables)
 # Date:         9/1/26
 #
 
