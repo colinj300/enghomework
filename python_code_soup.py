@@ -8,18 +8,6 @@
 # Date:         9/1/26
 #
 
-# valid 
-# x = 1
-# y = 10
-# z = 0
-# x = y
-# x += 1
-# y += x
-# y *= x
-# z += x
-# z += y
-# print(z)
-
 x = 1
 y = 10
 z = 0
@@ -41,6 +29,7 @@ z += y # z = 102
 print(z) # prints 102
 
 z = 0
+y = 10
 x = y # x now equals 100
 y *= x # y now equals 10000
 x = y # x now equals 10000
