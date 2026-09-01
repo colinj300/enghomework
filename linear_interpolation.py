@@ -25,11 +25,11 @@ rad = 6745 # radius of orbit circle
 circ = 2*(pi)*rad # circumference of the circle that is orbiting, houston is at pos 0
 
 y0 = (((y2-y1)/(x2-x1))*(x0-x1) + y1)
-print("Part 1")
-print(f"For t = {x0} minutes, the position p = {y0} kilometers.")
+print("Part 1:")
+print(f"For t = {x0} minutes, the position p = {y0} kilometers")
 
-print("Part 2")
+print("Part 2:")
 x0 = 300 # reassigns x0 to 300 so the interpolation can be reran
 y0 = (((y2-y1)/(x2-x1))*(x0-x1) + y1) # rerunning interpolation with updated x0
 y0p2 = (y0 % circ) # assigns y0p2 the modulus of the interpolation divided by the circumference using x=300. 
-print(f"For t = {x0} minutes, the position p = {y0p2} kilometers.")
+print(f"For t = {x0} minutes, the position p = {y0p2} kilometers")
