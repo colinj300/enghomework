@@ -41,20 +41,20 @@ y1 = (((y2-y0)/(t2-t0))*(t1-t0) + y0)
 z1 = (((z2-z0)/(t2-t0))*(t1-t0) + z0)
 
 print(f"At time {t1} seconds:")
-print(f"x1 = {x1} m")
-print(f"y1 = {y1} m")
-print(f"z1 = {z1} m")
+print(f"x2 = {x1} m")
+print(f"y2 = {y1} m")
+print(f"z2 = {z1} m")
 print("-----------------------")
 
-t1 = 45
+t1 = 45.0
 x1 = (((x2-x0)/(t2-t0))*(t1-t0) + x0)
 y1 = (((y2-y0)/(t2-t0))*(t1-t0) + y0)
 z1 = (((z2-z0)/(t2-t0))*(t1-t0) + z0)
 
 print(f"At time {t1} seconds:")
-print(f"x1 = {x1} m")
-print(f"y1 = {y1} m")
-print(f"z1 = {z1} m")
+print(f"x3 = {x1} m")
+print(f"y3 = {y1} m")
+print(f"z3 = {z1} m")
 print("-----------------------")
 
 t1 = 52.5
@@ -63,20 +63,20 @@ y1 = (((y2-y0)/(t2-t0))*(t1-t0) + y0)
 z1 = (((z2-z0)/(t2-t0))*(t1-t0) + z0)
 
 print(f"At time {t1} seconds:")
-print(f"x1 = {x1} m")
-print(f"y1 = {y1} m")
-print(f"z1 = {z1} m")
+print(f"x4 = {x1} m")
+print(f"y4 = {y1} m")
+print(f"z4 = {z1} m")
 print("-----------------------")
 
-t1 = 60
+t1 = 60.0
 x1 = (((x2-x0)/(t2-t0))*(t1-t0) + x0)
 y1 = (((y2-y0)/(t2-t0))*(t1-t0) + y0)
 z1 = (((z2-z0)/(t2-t0))*(t1-t0) + z0)
 
 print(f"At time {t1} seconds:")
-print(f"x1 = {x1} m")
-print(f"y1 = {y1} m")
-print(f"z1 = {z1} m")
+print(f"x5 = {x1} m")
+print(f"y5 = {y1} m")
+print(f"z5 = {z1} m")
 print("-----------------------")
 
 
