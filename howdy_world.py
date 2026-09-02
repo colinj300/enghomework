@@ -7,6 +7,9 @@
 # Assignment:   LAB 1.1 (Howdy, World!)
 # Date:         8/26/26
 #
-
+from math import *
 print("Howdy, World!")
 print("I have been playing piano & viola for 9 years.")
+print(((3**2 ) * (sqrt(16) // 3) + (23 % 5)))
+_help = "hi"
+print(_help)
