@@ -14,7 +14,7 @@ print(f"This program calculates the Reynolds number given velocity, length, and 
 reynolds_velo = float(input(f"Please enter the velocity (m/s): ")) # takes user input for velocity, floats and stores it
 reynolds_len = float(input(f"Please enter the length (m): ")) # takes user input for length, floats and stores it
 reynolds_visc = float(input(f"Please enter the viscosity (m^2/s): ")) # takes user input for viscosity, floats and stores it
-print(f"Reynolds number is {int(((reynolds_velo * reynolds_len) / reynolds_visc))}")
+print(f"Reynolds number is {((reynolds_velo * reynolds_len) / reynolds_visc):.0f}")
 print("")
 
 print(f"This program calculates the wavelength given distance and angle")
