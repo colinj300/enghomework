@@ -24,6 +24,7 @@ y2 = float(input("Enter the y position of the object at time 2: ")) # prompts us
 z2 = float(input("Enter the z position of the object at time 2: ")) # prompts user for z pos @ t2
 
 interval = float((t2-t0) / 4) # takes the difference of the final-initial time, divides by 4 so we have an equal interval
+print("")
 
 t1 = t0
 x1 = float((((x2-x0)/(t2-t0))*(t1-t0) + x0))
