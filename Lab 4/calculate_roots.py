@@ -8,22 +8,27 @@
 # Date:         9/10/26
 #
 
-aco = int(input("Please enter the coefficient A: "))
-bco = int(input("Please enter the coefficient B: "))
-cco = int(input("Please enter the coefficient C: "))
+from math import *
+
+aco = float(input("Please enter the coefficient A: "))
+bco = float(input("Please enter the coefficient B: "))
+cco = float(input("Please enter the coefficient C: "))
 
 if(aco != 0):
-    #quadratic formula
+    # quadratic equation
+    disc = bco**2 - 4*aco*cco
+    if(disc < 0):
+        imaginary = sqrt(-disc)
+        real = -bco / (2*aco)
+        imaginary = imaginary / (2*aco)
+        print(f"The roots are x = {real} + {imaginary}i and x = {real} - {imaginary}i")
+    elif(disc == 0):
+        print(f"The root is x = {-bco / (2*aco)}")
+    else:
+        x1 = (-bco + sqrt(disc)) / (2*aco)
+        x2 = (-bco - sqrt(disc)) / (2*aco)
+        print(f"The roots are x = {x1} and x = {x2}")
 elif(bco != 0):
-    # x = -c/b
-elif(cco != 0)
-
-
-# if a != 0:
-#     quadratic → solve with quadratic formula
-# else if b != 0:
-#     linear → x = -c/b
-# else if c != 0:
-#     no solution
-# else:
-#     infinitely many solutions
+    print(f"The root is x = {-cco/bco}")
+elif(cco != 0):
+    print(f"You entered an invalid combination of coefficients!")
