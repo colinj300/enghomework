@@ -10,28 +10,33 @@
 
 numbersstr = input("Enter numbers: ")
 list(numbersstr)
-print(numbersstr)
-
-numbers = [int(x) for x in numbersstr] # converts all chars to ints
+numbers = [int(x) for x in numbersstr.split()] # converts all chars to ints
  # converts current index to integer
 
 # check the sum of numbers from index 0-i, i+1 to end and compare the two
 # nested loops is the only thing i could think of
+
+match = False
 
 for i in range(len(numbers)):
     leftsum = 0
     rightsum = 0
     leftlist = []
     rightlist = []
-    for j in range(numbers[:i+1]): # get left sum
+    for j in range(len(numbers[:i+1])): # get left sum
         leftsum += numbers[j]
         leftlist.append(numbers[j])
-    for j in range(numbers[i+1:]):
+    for j in range(len(numbers[i+1:])):
         rightsum += numbers[j]
         rightlist.append(numbers[j])
     if leftsum == rightsum:
-        print(f'Left: {leftlist}')
-        print(f'Right: {rightlist}')
-        print(f'Both sum to {leftsum}')
+        match == True
         break
-    
+if match == True:
+    print(f'Left: {leftlist}')
+    print(f'Right: {rightlist}')
+    print(f'Both sum to {leftsum}')
+else:
+    print("Cannot split evenly")
+            
+
