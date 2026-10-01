@@ -5,13 +5,13 @@
 # Name:         COLIN JOHNS
 # Section:      ENG-102-535
 # Assignment:   LAB 7.1 (Name Game)
-# Date:         8/26/26
+# Date:         9/30/26
 #
 
 name = input("What is your name? ")
 storedname = name
 list(name)
-vowellist = ['a', 'e', 'i', 'o', 'u']
+vowellist = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
 vowindex = 0 
 for i in range(len(name)):
     if name[i] in vowellist: # finds and stores the index val of the first vowel

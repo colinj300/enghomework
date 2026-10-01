@@ -5,5 +5,36 @@
 # Name:         COLIN JOHNS
 # Section:      ENG-102-535
 # Assignment:   LAB 7.2 (Split List)
-# Date:         8/26/26
+# Date:         10/1/26
 #
+
+numbersstr = input("Enter numbers: ")
+numbers = [int(x) for x in numbersstr.split()] # converts all chars to ints
+ # converts current index to integer
+
+# check the sum of numbers from index 0-i, i+1 to end and compare the two
+# nested loops is the only thing i could think of
+
+match = False # bool to check if sum is found to be equal
+
+for i in range(len(numbers)-1):
+    leftsum = 0
+    rightsum = 0
+    leftlist = []
+    rightlist = []
+    for j in range(len(numbers[:i+1])): # get left sum
+        leftsum += numbers[j]
+        leftlist.append(numbers[j])
+    for j in range(i+1, len(numbers)): # get right summ
+        rightsum += numbers[j]
+        rightlist.append(numbers[j])
+    if leftsum == rightsum:
+        match = True
+        break
+if match == True:
+    print(f'Left: {leftlist}')
+    print(f'Right: {rightlist}')
+    print(f'Both sum to {leftsum}')
+else:
+    print("Cannot split evenly")
+            

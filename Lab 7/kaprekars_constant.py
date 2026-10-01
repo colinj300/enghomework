@@ -5,38 +5,41 @@
 # Name:         COLIN JOHNS
 # Section:      ENG-102-535
 # Assignment:   LAB 7.3 (Kaprekars Constant)
-# Date:         8/26/26
+# Date:         10/1/26
 #
 
-numbersstr = input("Enter numbers: ")
-list(numbersstr)
-numbers = [int(x) for x in numbersstr.split()] # converts all chars to ints
- # converts current index to integer
+usernum = input("Enter a four-digit integer: ")
+current = int(usernum)
+count = 0
+goal = 6174
 
-# check the sum of numbers from index 0-i, i+1 to end and compare the two
-# nested loops is the only thing i could think of
+print(usernum, end="")
 
-match = False
+while current != goal and current != 0:
+    s = str(current) 
+    while len(s) < 4: # pads to 4 digits w lead 0
+        s = "0" + s
 
-for i in range(len(numbers)):
-    leftsum = 0
-    rightsum = 0
-    leftlist = []
-    rightlist = []
-    for j in range(len(numbers[:i+1])): # get left sum
-        leftsum += numbers[j]
-        leftlist.append(numbers[j])
-    for j in range(len(numbers[i+1:])):
-        rightsum += numbers[j]
-        rightlist.append(numbers[j])
-    if leftsum == rightsum:
-        match == True
-        break
-if match == True:
-    print(f'Left: {leftlist}')
-    print(f'Right: {rightlist}')
-    print(f'Both sum to {leftsum}')
+    digits = list(s)
+    digits.sort()
+
+    usernumdesc = []
+    for i in range(len(digits)-1, -1, -1):
+        usernumdesc.append(digits[i])
+
+    ascnum = int("".join(digits))
+    descnum = int("".join(usernumdesc))
+    current = descnum - ascnum
+    count += 1
+    print(f" > {current}", end="")
+print()
+if current == goal:
+    print(f"{usernum} reaches 6174 via Kaprekar's routine in {count} iterations")
 else:
-    print("Cannot split evenly")
-            
+    print(f"{usernum} reaches 0 via Kaprekar's routine in {count} iterations")
+
+    
+
+
+
 
