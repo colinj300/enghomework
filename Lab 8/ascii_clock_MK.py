@@ -1,0 +1,119 @@
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Names: Colin Johns
+# Arsenii Markov
+# Matvii Khoruzhenko
+# Adan Parra
+# Section: ENG-102-535
+# Assignment: Lab 8 Team (Ascii Clock)
+# Date: 10/13/26
+
+ascii_dict = {
+    "0": [
+        "000",
+        "0 0",
+        "0 0",
+        "0 0",
+        "000"
+    ],
+    "1": [
+        " 1 ",
+        "11 ",
+        " 1 ",
+        " 1 ",
+        "111"
+    ],
+    "2": [
+        "222",
+        "  2",
+        "222",
+        "2  ",
+        "222"
+    ],
+    "3": [
+        "333",
+        "  3",
+        "333",
+        "  3",
+        "333"
+    ],
+    "4": [
+        "4 4",
+        "4 4",
+        "444",
+        "  4",
+        "  4"
+    ],
+    "5": [
+        "555",
+        "5  ",
+        "555",
+        "  5",
+        "555"
+    ],
+    "6": [
+        "666",
+        "6  ",
+        "666",
+        "6 6",
+        "666"
+    ],
+    "7": [
+        "777",
+        "  7",
+        "  7",
+        "  7",
+        "  7"
+    ],
+    "8": [
+        "888",
+        "8 8",
+        "888",
+        "8 8",
+        "888"
+    ],
+    "9": [
+        "999",
+        "9 9",
+        "999",
+        "  9",
+        "999"
+    ],
+    ":": [
+        " ",
+        ":",
+        " ",
+        ":",
+        " "
+    ],
+    "A": [
+        " A ",
+        "A A",
+        "AAA",
+        "A A",
+        "A A"
+    ],
+    "P": [
+        "PPP",
+        "P P",
+        "PPP",
+        "P  ",
+        "P  "
+    ],
+    "M": [
+        "M   M",
+        "MM MM",
+        "M M M",
+        "M   M",
+        "M   M"
+    ],
+    " ": [
+        " ",
+        " ",
+        " ",
+        " ",
+        " "
+    ]
+}
