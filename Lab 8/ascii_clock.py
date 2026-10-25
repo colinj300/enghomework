@@ -172,7 +172,7 @@ else:
 printstr = ""
 for row in range(5):
     for char in converted_time:
-        glyph_row = ascii_dict[char][row]
+        glyph_row = ascii_dict[char][row]   
         # Swap the drawing character for the user's character
         # (spaces and colons stay the same)
         for c in glyph_row:
