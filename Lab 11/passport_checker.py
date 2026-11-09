@@ -40,57 +40,18 @@ for i in range(len(individuals)):
     people.append(person)
 
 invalid = []
+valid = []
 counter = 0
 
+for i in range(len(people)):
+    # valid if all 8 fields are there, or 7 fields with pid being the only one missing
+    if len(people[i]) == 8 or (len(people[i]) == 7 and "pid" not in people[i]):
+        counter += 1
+        valid.append(raw[i])
+    else:
+        invalid.append(people[i])
+
 with open("valid_passports.txt", "w") as out:
-    for i in range(len(people)):
-        p = people[i]
-        is_valid = True
-
-        if not (len(p) == 8 or (len(p) == 7 and "pid" not in p)):
-            is_valid = False
-        else:
-            birth = int(p.get("byr"))
-            issue = int(p.get("iyr"))
-            exp = int(p.get("eyr"))
-            height1 = p.get("hgt")
-            htype = height1[-2:]
-            hnum = height1[:-2]
-            haircl = p.get("hcl")
-            hex_chars = "0123456789abcdef"
-            eyecl = p.get('ecl')
-            eyeclg = ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']
-            cntid = p.get('cid')
-
-            if birth < 1922 or birth > 2010:
-                is_valid = False
-            if issue < 2016 or issue > 2026:
-                is_valid = False
-            if exp < 2026 or exp > 2036:
-                is_valid = False
-            if not hnum.isdigit():
-                is_valid = False
-            elif htype == "cm":
-                if int(hnum) < 150 or int(hnum) > 193:
-                    is_valid = False
-            elif htype == "in":
-                if int(hnum) < 59 or int(hnum) > 76:
-                    is_valid = False
-            else:
-                is_valid = False
-            if len(haircl) != 7 or haircl[0] != "#":
-                is_valid = False
-            else:
-                for c in haircl[1:]:
-                    if c not in hex_chars:
-                        is_valid = False
-            if eyecl not in eyeclg:
-                is_valid = False
-            if len(cntid) != 3 or not cntid.isdigit() or cntid[0] == "0":
-                is_valid = False
-        if is_valid:
-            counter += 1
-            out.write(raw[i] + "\n\n")
+    out.write("\n\n".join(valid)) # blank line only between passports, none at the end
 
 print(f"There are {counter} valid passports")
-
